@@ -12,4 +12,10 @@ Example ("Hello", 2) --> "Jgnnq"
 2 - Substring Method
 The goal of this project is to take in a string and then an array of substrings and to return a hash
 where each substring is a key and the value is how many times its counted in the string.
-Example func("Hello", ["Hell", "lo", "l"]) --> {"Hell" => 1, "lo" => 1, "l" => 2}
+Example ("Hello", ["Hell", "lo", "l"]) --> {"Hell" => 1, "lo" => 1, "l" => 2}
+
+3 - Stock Picker
+The goal of this project is to take in an array of stock prices on 
+sequential days and return an array containing the best day to
+buy and the best day to sell for max profit.
+Example ([17,3,6,9,15,8,6,1,10]) --> [1,4] (15-3) = 12
