@@ -19,10 +19,10 @@ def bubble_sort(my_ary = [4,3,1,2])
 
         # populate the comparison array by mapping the newly sorted array
         comp_ary = my_ary.each_cons(2).map{|i,j| i <=> j}
+        comp_ary = comp_ary.join(",").gsub("0", "-1").split(",").map{|i| i.to_i}
     end
 
     puts my_ary
 end
 
-bubble_sort([4,3,78,2,0])
-#bubble_sort([4,3,78,2,0,2])
+bubble_sort([4,3,78,2,0,2])
